@@ -421,15 +421,6 @@ def entities_context(city):
                 neigh_dist.append(float(neigh_distance))
                 neighbour.append(str(entities[n]['id']))
 
-            if len(neigh_dist) >= 20:
-                combined = list(zip(neigh_dist, neighbour))
-                combined.sort(key=lambda x: x[0])
-
-                neigh_dist, neighbour = zip(*combined[:20])
-
-                neigh_dist = list(neigh_dist)
-                neighbour = list(neighbour)
-
         entity_dict[entities[e]['id']] = {
             'type': entities[e]['type'], 'id': entities[e]['id'], 'lat': entities[e]['lat'], 'lon': entities[e]['lon'],
             'tags': entities[e]['tags'], 'geohash': entities[e]['geohash'],
