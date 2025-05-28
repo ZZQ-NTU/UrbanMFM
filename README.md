@@ -19,8 +19,8 @@ This process will query OSM Overpass API, download and pre-process the data for 
 
 ### Pre-training
 
-If you wish to pre-train model of a city, use:
+If you wish to pre-train model of a city, e.g., Singapore, please use:
 
 ```
-python UrbanMFM_train.py -c "city"
+python UrbanMFM_train.py -c "Singapore"
 ```
